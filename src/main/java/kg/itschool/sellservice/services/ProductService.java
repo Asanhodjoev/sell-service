@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import java.util.List;
 
 public interface ProductService {
+
     ResponseEntity<?> saveProduct(String token, ProductRequestDto productRequestDto);
     Product getById(Long id);
 

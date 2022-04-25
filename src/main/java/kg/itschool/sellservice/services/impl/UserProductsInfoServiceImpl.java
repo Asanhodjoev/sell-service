@@ -42,8 +42,6 @@ public class UserProductsInfoServiceImpl implements UserProductsInfoService {
 
         User user = userService.findByLogin(login);
 
-        // Я знаю что все это можно выполнить одним запросом но у меня возникли
-        // вопросы по работе Репозитория когда нужно брать данные из разных таблиц какой указывать Entity в репо
 
         List<UserProductInfoObj> userProductInfoObjList = new ArrayList<>();
         Double sum = 0.0;
